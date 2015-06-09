@@ -1,0 +1,228 @@
+@import "compass";
+@import "mixins/mixins";
+@import 'compass/css3/filter';
+@import "fonts";
+
+
+//Tips given
+//Tips given
+//Tips given
+
+.change_people {
+  display: block;
+  width: 40px;
+  height: 80px;
+  background-color: #f1f1f1;
+  border-bottom-right-radius: 110px;
+  border-top-right-radius: 110px;
+  border-bottom: 0;
+  position: absolute;
+  top: 30px;
+  border: none;
+  i {
+    font-size: 27px;
+    color: #737373;
+  }
+  &.prev {
+    left: 0px;
+    i {
+      margin-left: 0px;
+    }
+  }
+  &.next {
+    right: 0px;
+    border-bottom-left-radius: 110px;
+    border-top-left-radius: 110px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    i {
+      margin-left: -0px;
+    }
+  }
+}
+
+.tip_container {
+  padding-top: 20px;
+  .avatar {
+    width: 90px;
+    height: 90px;
+    @include border-radius(45px);
+    @include background-size(cover);
+    border: 2px solid #d6d6da;
+    background-position: center center;
+    margin: 0 auto;
+  }
+  .name {
+    @include font-size(18px);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ABABAB;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .tip_body {
+    text-align: center;
+    .title {
+      @include font-size(18px);
+      line-height: 27px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #5C5C5C;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 25px;
+
+    }
+    .tip_image {
+      width: 95%;
+      display: block;
+      margin: 0 auto;
+    }
+    .add_to_favorite {
+      border: none;
+      @include font-size(16px);
+      color: #FF7D6F;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      background-color: transparent;
+      display: inline-block;
+      margin: 0 auto;
+      margin-top: 35px;
+    }
+    .ion-android-star-outline:before, .ion-android-star:before {
+      font-size: 34px;
+      vertical-align: middle;
+      margin-top: -5px;
+      margin-right: 5px;
+    }
+    .tip_inf {
+      @include font-size(16px);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #787878;
+      text-align: center;
+      margin-top: 10px;
+      .points {
+        border-right: 2px solid #cecece;
+        padding-right: 5px;
+        margin-right: 7px;
+        font-weight: 600;
+      }
+      .time{
+        font-weight: 600;
+      }
+    }
+    .answer_button {
+      background-color: #fd665c;
+      height: 47px;
+      border: none;
+      @include font-size(18px);
+      color: #ffffff;
+      font-family: helvetica, sans-serif;
+      text-transform: uppercase;
+      width: 70%;
+      display: block;
+      margin: 25px auto 30px auto;
+      @include border-radius(25px);
+    }
+  }
+  .comments_title {
+    color: #969696;
+    @include font-size(14px);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-left: 10px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+  }
+  .comments_list {
+    margin-bottom: 20px;
+    .item {
+      white-space: normal;
+      &.my {
+        background-color: #fd665c;
+        h2, .comment_content {
+          color: #ffffff;
+        }
+        .comments_time {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+    .item:first-child {
+      border: none;
+    }
+    .user_pic {
+      width: 50px;
+      height: 50px;
+      @include border-radius(25px);
+      border: 2px solid #cdcfcf;
+      @include background-size(cover);
+      background-position: center center;
+      display: block;
+      position: absolute;
+      left: 10px;
+      top: 11px;
+    }
+    a {
+      text-decoration: none;
+    }
+    h2 {
+      @include font-size(18px);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #5C5C5C;
+      text-decoration: none;
+    }
+    .comments_time {
+      @include font-size(13px);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #ABABAB;
+    }
+    .comment_content {
+      @include font-size(14px);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #ABABAB;
+      white-space: normal;
+    }
+  }
+}
+
+.reviews_buttons{
+  margin-bottom: 10px;
+  margin-top: 25px;
+  display: block;
+  text-align: center;
+  button{
+    width: 65px;
+    height: 65px;
+    @include border-radius(40px);
+    border: 3px solid #F2F2F2;;
+    display: inline-block;
+    margin: 0 2px;
+    background-color: transparent;
+    color: white;
+    white-space: nowrap;
+    &.good {
+      background-color: #6cdc90;
+    }
+    &.ok {
+      background-color: #ffca58;
+    }
+    &.bad {
+      background-color: #ec473c;
+    }
+    .title{
+      display: block;
+      margin-top: -3px;
+      @include font-size(12px);
+    }
+  }
+}
+
+//Tips given end
+//Tips given end
+//Tips given end
+
